@@ -1,8 +1,18 @@
 // import styles from "../styles/Home.module.scss";
+import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import Project from "../components/Project";
 
-export default function Home({ projects }) {
+export default function Home() {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    (async function getProjects() {
+      const response = await fetch("/api/projects");
+      setProjects(await response.json());
+    })();
+  }, []);
+
   return (
     <Layout>
       {projects.map(({ id, title, description, buttonLinks, url }) => (
@@ -16,15 +26,4 @@ export default function Home({ projects }) {
       ))}
     </Layout>
   );
-}
-
-export async function getStaticProps() {
-  const response = await fetch("http://localhost:3000/api/projects");
-  const projects = await response.json();
-
-  return {
-    props: {
-      projects,
-    },
-  };
 }
