@@ -1,0 +1,32 @@
+.phone {
+  width: 37.3rem;
+  height: 72rem;
+  box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+  border: 12px solid #333;
+  border-radius: 5rem;
+}
+
+@media (min-width: 450px) {
+  .phone {
+    width: 50rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .phone {
+    width: 65rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .phone {
+    width: 37.3rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .phone {
+    width: 50rem;
+  }
+}

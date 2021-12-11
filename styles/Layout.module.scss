@@ -1,0 +1,16 @@
+.main_container {
+  padding: 2rem;
+  overflow: hidden;
+}
+
+@media (min-width: 500px) {
+  .main_container {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main_container {
+    padding: 6rem;
+  }
+}
