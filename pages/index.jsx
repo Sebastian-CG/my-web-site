@@ -7,10 +7,13 @@ export default function Home() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    (async function getProjects() {
-      const response = await fetch("/api/projects");
-      setProjects(await response.json());
-    })();
+    const getProjects = async () => {
+      const res = await fetch("/api/projects");
+      const data = await res.json();
+      setProjects(data);
+    };
+
+    return getProjects();
   }, []);
 
   return (
