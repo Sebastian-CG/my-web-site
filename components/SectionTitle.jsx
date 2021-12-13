@@ -1,6 +1,12 @@
 import { MdInfo } from "react-icons/md";
 
-const styles = {
+const containerStyles = {
+  display: "flex",
+  justifyContent: "flex-end",
+  margin: "4rem 0",
+};
+
+const titleStyles = {
   display: "inline-flex",
   justifyContent: "center",
   alignItems: "center",
@@ -12,8 +18,10 @@ const styles = {
 
 export default function SectionTitle({ title }) {
   return (
-    <h2 style={styles}>
-      {title} <MdInfo title="proyects" />
-    </h2>
+    <div style={containerStyles}>
+      <h2 style={titleStyles}>
+        {title} <MdInfo />
+      </h2>
+    </div>
   );
 }

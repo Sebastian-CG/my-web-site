@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Fragment } from "react";
 import styles from "../styles/Layout.module.scss";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
@@ -23,6 +24,7 @@ export default function Layout({ children }) {
       </Head>
 
       <main className={styles.main_container}>{children}</main>
+      <Footer />
     </Fragment>
   );
 }

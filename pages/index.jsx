@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import Project from "../components/Project";
+import SectionTitle from "../components/SectionTitle";
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
@@ -18,6 +19,7 @@ export default function Home() {
 
   return (
     <Layout>
+      <SectionTitle title="projects" />
       {projects.map(({ id, title, description, buttonLinks, url }) => (
         <Project
           key={id}
