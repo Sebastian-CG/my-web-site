@@ -1,0 +1,36 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .circle {
+    width: 20rem;
+    height: 20rem;
+
+    border-radius: 20rem;
+    border: 1rem solid #eeeeee;
+    border-top: 1rem solid #0099ff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin 1s linear infinite;
+  }
+
+  .description {
+    position: absolute;
+    font-size: 1.6rem;
+  }
+}
