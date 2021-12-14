@@ -5,7 +5,22 @@
   gap: 0.5rem;
   margin: 0 3rem;
   color: #0099ff;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   text-decoration: none;
   text-transform: capitalize;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .link {
+    font-size: 3rem;
+    margin: 0 2rem;
+  }
+
+  .name {
+    display: none;
+  }
 }

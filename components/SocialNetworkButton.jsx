@@ -10,7 +10,7 @@ export default function SocialNetworkButton({ url, iconName, name }) {
       {iconName === "twitter" && <AiOutlineTwitter />}
       {iconName === "github" && <AiFillGithub />}
       {iconName === "gmail" && <IoMail />}
-      {name}
+      <span className={styles.name}>{name}</span>
     </a>
   );
 }

@@ -21,8 +21,8 @@ export default function handler(req, res) {
         "The company employee dashboard is intended to provide centralized data management about each employee of a company, to have a better control of the information.",
       buttonLinks: {
         view: "https://next-proyect-beta.vercel.app/",
-        code: "https://github.dev/Sebastian-CG/next-project",
-        sourceCode: "https://github.com/Sebastian-CG/next-project",
+        code: "https://github.dev/Sebastian-CG/next-proyect",
+        sourceCode: "https://github.com/Sebastian-CG/next-proyect",
       },
       url: "https://next-proyect-beta.vercel.app/",
     },
