@@ -1,9 +1,7 @@
-// import styles from "../styles/Home.module.scss";
 import { Fragment, useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import Loading from "../components/Loading";
 import Project from "../components/Project";
-import SectionTitle from "../components/SectionTitle";
 
 export default function Home() {
   const [projects, setProjects] = useState([]);
@@ -27,7 +25,6 @@ export default function Home() {
 
       {!isLoading && (
         <Layout>
-          <SectionTitle title="projects" />
           {projects.map(({ id, title, description, buttonLinks, url }) => (
             <Project
               key={id}
